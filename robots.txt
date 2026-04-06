@@ -1,6 +1,6 @@
 # Autoriser tous les robots (Google, Bing, etc.)
 User-agent: *
 Allow: /
-Sitemap: https://lifedesignca.github.io/english-learning-website//wp-sitemap.xml
+Sitemap: https://lifedesignca.github.io/english-learning-website//english_site.xml
 
 
