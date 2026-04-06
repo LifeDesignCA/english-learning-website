@@ -8,4 +8,4 @@ Disallow: /venv/
 Disallow: /local_update.py
 
 # Indiquer l'emplacement de votre sitemap (Remplacez par votre URL réelle)
-Sitemap: https://lifedesignca.github.io/english-learning-website//sitemap.xml
+Sitemap: https://lifedesignca.github.io/english-learning-website//wp-sitemap.xml
