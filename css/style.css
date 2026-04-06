@@ -1,0 +1,52 @@
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6f8;
+}
+
+header{
+background:#2c3e50;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#34495e;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:40px;
+max-width:900px;
+margin:auto;
+}
+
+button{
+padding:10px 15px;
+background:#3498db;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#2980b9;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:15px 0;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
