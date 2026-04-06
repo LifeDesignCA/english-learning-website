@@ -1,0 +1,149 @@
+{
+  "_instructions": {
+    "how_to_add_sentences": "Add an object to the 'sentences' array with text, category, and fr (French translation). Categories: greetings, travel, work, social.",
+    "how_to_add_vocabulary": "Add an object to 'vocabulary' with word, pos (noun/verb/adjective/adverb), definition, example, level (a1/a2/b1/b2/c1/c2).",
+    "how_to_add_quiz_questions": "Add an object to 'quiz' with q (question), options (array of 4 strings), correct (index 0-3 of the right answer), and optional explanation.",
+    "how_to_add_scenarios": "Add a key to 'conversation.scenarios'. Each scenario needs opening (first bot message), replies (array of suggested user replies), and responses (object where keys are keywords and 'default' is the fallback).",
+    "how_to_add_scenario_buttons": "Add an object to 'conversation.scenarioButtons' with id (must match scenario key), label, and emoji.",
+    "vocabulary_levels": "a1 = beginner, a2 = elementary, b1 = intermediate, b2 = upper-intermediate, c1 = advanced, c2 = mastery"
+  },
+
+  "sentences": [
+    { "text": "Could you please repeat that more slowly?", "category": "social", "fr": "Pourriez-vous répéter cela plus lentement ?" },
+    { "text": "I'd like to make a reservation for two, please.", "category": "travel", "fr": "Je voudrais faire une réservation pour deux, s'il vous plaît." },
+    { "text": "It was great to catch up with you!", "category": "social", "fr": "C'était super de se retrouver !" },
+    { "text": "Could I reschedule our meeting to Thursday?", "category": "work", "fr": "Pourrions-nous reporter notre réunion à jeudi ?" },
+    { "text": "Excuse me, where is the nearest subway station?", "category": "travel", "fr": "Excusez-moi, où est la station de métro la plus proche ?" },
+    { "text": "I'm looking forward to hearing from you.", "category": "work", "fr": "J'attends votre réponse avec impatience." },
+    { "text": "How have you been lately?", "category": "greetings", "fr": "Comment allez-vous ces derniers temps ?" },
+    { "text": "Nice to meet you, I've heard so much about you!", "category": "greetings", "fr": "Ravi de vous rencontrer, j'ai beaucoup entendu parler de vous !" },
+    { "text": "Could you give me a hand with this?", "category": "social", "fr": "Pourriez-vous m'aider avec ceci ?" },
+    { "text": "That's a great point, I hadn't thought of it that way.", "category": "work", "fr": "C'est un excellent point, je n'avais pas envisagé cela ainsi." },
+    { "text": "Is this seat taken?", "category": "social", "fr": "Cette place est-elle occupée ?" },
+    { "text": "What would you recommend on the menu?", "category": "travel", "fr": "Que recommanderiez-vous au menu ?" }
+  ],
+
+  "sentenceCategories": [
+    { "id": "all",       "label": "All" },
+    { "id": "greetings", "label": "Greetings" },
+    { "id": "travel",    "label": "Travel" },
+    { "id": "work",      "label": "Work" },
+    { "id": "social",    "label": "Social" }
+  ],
+
+  "vocabulary": [
+    { "word": "Eloquent",      "pos": "adjective", "definition": "Fluent and persuasive in speaking or writing.",          "example": "She gave an eloquent speech about climate change.", "level": "b2" },
+    { "word": "Grateful",      "pos": "adjective", "definition": "Feeling or showing thanks for something received.",       "example": "I'm so grateful for your help yesterday.",          "level": "a1" },
+    { "word": "Collaborate",   "pos": "verb",      "definition": "To work jointly with others on a project.",              "example": "We collaborated on the project for six months.",    "level": "b1" },
+    { "word": "Resilient",     "pos": "adjective", "definition": "Able to recover quickly from difficulties.",             "example": "She was resilient in the face of challenges.",      "level": "b2" },
+    { "word": "Inquire",       "pos": "verb",      "definition": "To ask for information about something.",                "example": "I'd like to inquire about the job opening.",        "level": "b1" },
+    { "word": "Enthusiastic",  "pos": "adjective", "definition": "Having or showing intense interest or excitement.",      "example": "He was enthusiastic about the new project.",        "level": "a1" },
+    { "word": "Substantial",   "pos": "adjective", "definition": "Of considerable importance or size.",                   "example": "There was a substantial improvement in her grades.","level": "b2" },
+    { "word": "Negotiate",     "pos": "verb",      "definition": "To discuss in order to reach an agreement.",            "example": "They negotiated the terms of the contract.",        "level": "b1" }
+  ],
+
+  "quiz": [
+    {
+      "q": "Which sentence uses the correct tense?",
+      "options": ["Yesterday I go to the park.", "Yesterday I went to the park.", "Yesterday I have gone to the park.", "Yesterday I will go to the park."],
+      "correct": 1,
+      "explanation": "'Went' is the simple past tense of 'go', used for completed actions in the past."
+    },
+    {
+      "q": "Choose the correct article: ___ honest person.",
+      "options": ["A", "An", "The", "No article"],
+      "correct": 1,
+      "explanation": "Use 'an' before words that start with a vowel sound. 'Honest' starts with a silent H, so it sounds like 'onest'."
+    },
+    {
+      "q": "What does 'eloquent' mean?",
+      "options": ["Loud and aggressive", "Fluent and persuasive", "Short and simple", "Angry and upset"],
+      "correct": 1,
+      "explanation": "Eloquent describes someone who speaks or writes in a clear, fluent and persuasive way."
+    },
+    {
+      "q": "Which is the correct plural of 'tooth'?",
+      "options": ["Tooths", "Teeths", "Teeth", "Toothes"],
+      "correct": 2,
+      "explanation": "Tooth has an irregular plural: teeth. Other irregular plurals: foot→feet, goose→geese."
+    },
+    {
+      "q": "Fill in: She ___ to the store every morning.",
+      "options": ["go", "going", "goes", "gone"],
+      "correct": 2,
+      "explanation": "Third person singular (she/he/it) takes 'goes' in the simple present tense."
+    },
+    {
+      "q": "Which word means 'to work together'?",
+      "options": ["Compete", "Collaborate", "Argue", "Ignore"],
+      "correct": 1,
+      "explanation": "Collaborate comes from Latin 'collaborare' — col (together) + laborare (to work)."
+    },
+    {
+      "q": "Choose the right preposition: I'm interested ___ learning English.",
+      "options": ["at", "on", "in", "about"],
+      "correct": 2,
+      "explanation": "The correct collocation is 'interested in'. Other fixed prepositions: good at, fond of, afraid of."
+    },
+    {
+      "q": "What is the past tense of 'bring'?",
+      "options": ["Bringed", "Brung", "Brought", "Brang"],
+      "correct": 2,
+      "explanation": "Bring → brought is an irregular verb. Other similar pairs: think→thought, buy→bought, seek→sought."
+    }
+  ],
+
+  "conversation": {
+    "scenarioButtons": [
+      { "id": "cafe",    "emoji": "☕", "label": "At a Café" },
+      { "id": "airport", "emoji": "✈️", "label": "At the Airport" },
+      { "id": "job",     "emoji": "💼", "label": "Job Interview" },
+      { "id": "shop",    "emoji": "🛍️", "label": "Shopping" }
+    ],
+    "scenarios": {
+      "cafe": {
+        "opening": "Hi! Welcome to The Morning Cup ☕ What can I get for you today?",
+        "replies": ["I'd like a large coffee, please.", "What do you recommend?", "Do you have any tea?", "Can I get a table for two?"],
+        "responses": {
+          "coffee":    "Great choice! Would you like that black or with milk?",
+          "recommend": "Our oat milk latte is very popular! Would you like to try one?",
+          "tea":       "Absolutely! We have green, black, and herbal teas. Which do you prefer?",
+          "table":     "Of course! Right this way. Would you like to see the menu?",
+          "default":   "Of course! Anything else I can get for you?"
+        }
+      },
+      "airport": {
+        "opening": "Good morning! May I see your passport and boarding pass, please?",
+        "replies": ["Here you go.", "I have an e-ticket, is that okay?", "How long is the flight?", "Is this the right gate?"],
+        "responses": {
+          "e-ticket": "Yes, that's perfectly fine! Can you show me the QR code?",
+          "flight":   "Your flight to London is approximately 7 hours and 40 minutes.",
+          "gate":     "Yes, this is Gate 12B for the 10:45 flight. Boarding begins in 30 minutes.",
+          "default":  "Thank you! Your seat is 24C, by the window. Have a great flight!"
+        }
+      },
+      "job": {
+        "opening": "Thank you for coming in today. Could you tell me a little about yourself?",
+        "replies": ["I have 3 years of experience.", "I'm passionate about this field.", "I work well in teams.", "I'm a quick learner."],
+        "responses": {
+          "experience": "That's excellent! Can you tell me about a challenge you overcame at work?",
+          "passionate":  "That's great to hear! What specifically draws you to this role?",
+          "team":        "Collaboration is key here. Can you give an example of successful teamwork?",
+          "learner":     "We love that quality! How do you usually approach learning something new?",
+          "default":     "Very interesting! Where do you see yourself in five years?"
+        }
+      },
+      "shop": {
+        "opening": "Welcome! Can I help you find something today?",
+        "replies": ["I'm looking for a gift.", "Do you have this in blue?", "How much does this cost?", "Where are the changing rooms?"],
+        "responses": {
+          "gift":     "Wonderful! Who is it for? We have a lovely gift wrap service too.",
+          "blue":     "Let me check the stockroom for you. One moment, please!",
+          "cost":     "That item is $45, but we have a 20% sale on today!",
+          "changing": "The changing rooms are at the back, on your left. How many items?",
+          "default":  "Sure thing! Let me know if you need any help."
+        }
+      }
+    }
+  }
+}
