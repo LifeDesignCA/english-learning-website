@@ -1,11 +1,6 @@
 # Autoriser tous les robots (Google, Bing, etc.)
 User-agent: *
 Allow: /
-
-# Empêcher l'indexation de vos scripts de sauvegarde ou dossiers de test (si vous en avez)
-Disallow: /backups/
-Disallow: /venv/
-Disallow: /local_update.py
-
-# Indiquer l'emplacement de votre sitemap (Remplacez par votre URL réelle)
 Sitemap: https://lifedesignca.github.io/english-learning-website//wp-sitemap.xml
+
+
